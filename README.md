@@ -15,35 +15,35 @@
 
 
     Creating Git Folder
-mkdir yourprojectname   - it creates a new directory
-cd yourprojectname    - current working directory
+1.mkdir yourprojectname   - it creates a new directory
+2.cd yourprojectname    - current working directory
 
-git init -- to check we are in correct folder we can initialize using this command
+->git init -- to check we are in correct folder we can initialize using this command
 
       stage a file/files
 1.git add filename  - it adds one file
 2.git add --all/git add -A 
 
-Staged the wrong file? Use git restore --staged <file> to unstage it.
-Forgot to stage a file? Just run git add <file> again before you commit.
-Not sure what's staged? Run git status to see what will be committed.
+1.Staged the wrong file? Use git restore --staged <file> to unstage it.
+2.Forgot to stage a file? Just run git add <file> again before you commit.
+3.Not sure what's staged? Run git status to see what will be committed.
 
-git reset HEAD index.html/git restore --staged index.html  - used to unstage a file
+->git reset HEAD index.html/git restore --staged index.html  - used to unstage a file
 
 		Commiting
-git commit -m "message" - Commit staged changes with a message
-git commit -a -m "message" - Commit all tracked changes (skip staging)
-git log - See commit history
+1.git commit -m "message" - Commit staged changes with a message
+2.git commit -a -m "message" - Commit all tracked changes (skip staging)
+3.git log - See commit history
 
       Forgot to stage a file?
-If you run git commit -m "message" but forgot to git add a file, just add it and commit again. Or use git commit --amend to add it to your last commit.
-Typo in your commit message?
-Use git commit --amend -m "Corrected message" to fix the last commit message.
-Accidentally committed the wrong files?
-You can use git reset --soft HEAD~1 to undo the last commit and keep your changes staged.
+1.If you run git commit -m "message" but forgot to git add a file, just add it and commit again. Or use git commit --amend to add it to your last commit.
+2.Typo in your commit message?
+3.Use git commit --amend -m "Corrected message" to fix the last commit message.
+4.Accidentally committed the wrong files?
+5.You can use git reset --soft HEAD~1 to undo the last commit and keep your changes staged.
 
       To push into github repository
-git remote add origin https://github.com/shwetabiradar/myfirstgithublearningproject.git
-git push -u origin master
-git remote -v - for tracking
+1.git remote add origin https://github.com/shwetabiradar/myfirstgithublearningproject.git
+2.git push -u origin master
+3.git remote -v - for tracking
 
